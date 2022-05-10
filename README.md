@@ -13,7 +13,7 @@
 <br>
 
 <p align="center">
-  <img alt="DoctorCare" src=".github/preview.jpg" width="100%">
+  <img alt="DoctorCare" src="https://raw.githubusercontent.com/rocketseat-education/nlw-return-origin/main/.github/preview.jpg" width="100%">
 </p>
 
 ## Tecnologias
