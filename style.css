@@ -118,3 +118,16 @@ header img {
 
   width: 26.4rem;
 }
+
+header::before{
+  content: "";
+  width: 100vw;
+  height: 108rem;
+  background-color: var(--brand-light);
+  display: block;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
