@@ -1,3 +1,4 @@
+/*======================================GERAL================================*/
 * {
   margin: 0;
   box-sizing: border-box;
@@ -18,22 +19,38 @@ body {
   text-align: center;
 }
 
-header {
+.wrapper {
   width: 37.5rem;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+}
 
-  padding: 0 2rem;
+/*=========================HEADER=================================================*/
+
+header {
   margin-top: 4.1rem;
 }
 
-h4 {
+header::before {
+  content: "";
+  width: 100%;
+  height: 108rem;
+  background-color: var(--brand-light);
+  display: block;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+header h4 {
   font-size: 1.4rem;
   color: var(--primary-color);
 
   margin: 0 0 1.6rem 0;
 }
 
-h1 {
+header h1 {
   font-size: 3.4rem;
   color: var(--secondary-color);
 
@@ -41,7 +58,7 @@ h1 {
   margin-bottom: 2.4rem;
 }
 
-p {
+header p {
   font-size: 1.8rem;
   line-height: 150%;
 
@@ -50,7 +67,7 @@ p {
   margin-bottom: 3.2rem;
 }
 
-button {
+header button {
   background: var(--primary-color);
 
   border: none;
@@ -69,8 +86,17 @@ button {
   justify-content: center;
   gap: 1.6rem;
 
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 6rem;
+}
+
+header img {
+  display: block;
+  margin-inline: auto;
+  object-position: 0 2rem;
+
+  width: 26.4rem;
 }
 
 .stats {
@@ -87,6 +113,9 @@ button {
 
   border: 1px solid var(--brand-light);
   border-radius: 0.6rem;
+
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .stat h3 {
@@ -102,32 +131,20 @@ button {
 
 .stat p {
   margin: 0;
-  
+
   color: var(--primary-color);
-  
+
   line-height: 150%;
 
   font-size: 1.6rem;
-
 }
 
-header img {
-  display: block;
-  margin-inline: auto;
-  object-position: 0 2rem;
+/*=========================NAVIGATION=================================================*/
 
-  width: 26.4rem;
-}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-header::before{
-  content: "";
-  width: 100vw;
-  height: 108rem;
-  background-color: var(--brand-light);
-  display: block;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  padding: 1.6rem 2.4rem;
 }
